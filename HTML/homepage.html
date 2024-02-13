@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../CSS/homepage.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      color: #42424a;
+    }
+
+    header ul li {
+      display: inline-block;
+      list-style: none;
+      margin: 0 30px;
+    }
+
+    header ul li:last-child {
+      margin-right: 0;
+    }
+
+    header ul li a {
+      text-decoration: none;
+      color: #42424a;
+      padding: 22px 0;
+      display: inline-block;
+      transition: all ease 0.3s;
+      font-size: 16px;
+      padding-top: 50px;
+      padding-left: 10px;
+    }
+
+    header ul li a:hover {
+      color: #ff8a00;
+    }
+
+    header ul .submenu {
+      position: absolute;
+      width: 200px;
+      background-color: #ffffff;
+      box-shadow: 0 20px 45px #00000020;
+      margin-top: -50px;
+      opacity: 0;
+      z-index: -999;
+      transition: all ease 0.05s;
+    }
+
+    header ul li:hover .submenu {
+      z-index: 99;
+      opacity: 1;
+      margin-top: 0;
+    }
+
+    header ul .submenu li {
+      margin: 0;
+      width: 100%;
+    }
+
+    header ul .submenu li a {
+      padding: 15px 20px;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .headiv {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    button {
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0d47a1;
+    }
+
+    #sign {
+      text-decoration: none !important;
+      color: #42424a;
+      padding: 22px 0;
+      display: inline-block;
+      transition: all ease 0.3s;
+      font-size: 18px;
+      padding-right: 50px;
+      padding-top: 40px;
+      padding-left: 100px;
+    }
+
+    footer {
+      width: 100%;
+      /* position: absolute; */
+      bottom: 0;
+      background: linear-gradient(to right, #00093c, #2d0b00);
+      color: #fff;
+      padding: 100px 0 30px;
+      border-top-left-radius: 125px;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .row {
+      width: 85%;
+      margin: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .col {
+      width: 25%;
+      margin-bottom: 30px;
+    }
+
+    .col:nth-child(2),
+    .col:nth-child(3) {
+      flex-basis: 15%;
+    }
+
+    .logo {
+      width: 250px;
+      margin-bottom: 30px;
+    }
+
+    .col h3 {
+      width: fit-content;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .email-id {
+      width: fit-content;
+      border-bottom: 1px solid #ccc;
+      margin: 20px 0;
+    }
+
+    footer ul li {
+      list-style: none;
+      margin-bottom: 12px;
+    }
+
+    footer ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    form {
+      padding-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 50px;
+    }
+
+    form input {
+      width: 100%;
+      background: transparent;
+      color: #fff;
+      border: 0;
+      outline: none;
+    }
+
+    hr {
+      width: 90%;
+      border: 0;
+      border-bottom: 1px solid #fff;
+      margin: 20px auto;
+    }
+
+    .copyright {
+      text-align: center;
+    }
+  </style>
+  <title>PrinterX</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="headiv">
+        <div>
+          <a href="../HTML/homepage.html"><img src="../img/LOGO.png" alt="logo"
+              style="width: 200px; height: 99px" /></a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="../HTML/productpage.html">Printer &#11167; </a>
+              <ul class="submenu">
+                <li><a href="../HTML/3DPrinters.html">3D Printers</a></li>
+                <li><a href="../HTML/HomePrinter.html">Home Printers</a></li>
+                <li><a href="../HTML/business.html">Business Printers</a></li>
+                <li>
+                  <a href="../HTML/Enterprise.html">Enterprise Printers</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="../HTML/accessories.html">Accessories &#11167;</a>
+              <ul class="submenu">
+                <li><a href="../HTML/consumeables.html">Consumables</a></li>
+                <li>
+                  <a href="../HTML/media.html">Media and Maintenance</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../HTML/research.html">Research</a></li>
+            <li><a href="../HTML/aboutus.html">About US</a></li>
+            <li><a href="../HTML/blog.html">Blog</a></li>
+            <li><a href="../HTML/contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div>
+          <a href="../HTML/login.html" id="sign"><button>Log In</button></a>
+        </div>
+      </div>
+    </header>
+  </main>
+  <section id="back">
+    <div class="tex">
+      <h1 style="
+            font-size: 50px;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+          ">
+        SUMMER SALE
+      </h1>
+      <p>
+        Now Through 8/4 Enjoy an extra 20% off on any sale items,
+        automatically applied at checkout!
+      </p>
+      <a href="../HTML/productpage.html"><button class="shop">SHOP NOW</button></a>
+    </div>
+  </section>
+  <div style="padding: 50px 100px">
+    <div class="logos">
+      <div class="logos-slide">
+        <img src="../img/hplogo.png" />
+        <img src="../img/Epson-Logo.png" />
+        <img src="../img/Canon-Logo.png" />
+        <img src="../img/brother-logo.png" />
+        <img src="../img/xerox-logo.png" />
+        <img src="../img/Lexmark-logo.png" />
+      </div>
+    </div>
+    <div style="
+          display: flex;
+          background-color: white;
+          justify-content: space-evenly;
+        ">
+      <div class="three-category" style="background-image: url(../img/categorypic1.jpg)">
+        <h2>25% Off On All in One Printers</h2>
+        <p>Buy the best-selling all in one printers</p>
+        <a href="../HTML/productpage.html"><button>Shop Now</button></a>
+      </div>
+      <div class="three-category" style="background-image: url(../img/categorypic2.jpg)">
+        <h2>Shop our InkJet Printers</h2>
+        <p>Best printers for the home, office.</p>
+        <a href="../HTML/HomePrinter.html"><button>Shop Now</button></a>
+      </div>
+      <div class="three-category" style="background-image: url(../img/categorypic3.jpg)">
+        <h2>Browse our best 3D Printers</h2>
+        <p>3D Printer That Reliably Brings Full-Scale Ideas To Life</p>
+        <a href="../HTML/3DPrinters.html"><button>Shop Now</button></a>
+      </div>
+    </div>
+
+    <div class="count">
+      <h1 style="font-size: 48px; font-weight: bold; margin-bottom: 20px">
+        Summer Flash Sale
+      </h1>
+
+      <div id="countdown" class="countdown">
+        <div class="time">
+          <h2 id="days"></h2>
+          <small>Days</small>
+        </div>
+
+        <div class="time">
+          <h2 id="hours"></h2>
+          <small>Hours</small>
+        </div>
+
+        <div class="time">
+          <h2 id="minutes"></h2>
+          <small>Minutes</small>
+        </div>
+
+        <div class="time">
+          <h2 id="seconds"></h2>
+          <small>Seconds</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="feature">
+    <h1>Feautured Products</h1>
+    <hr class="line" />
+    <div class="container">
+      <a href="../HTML/homeproductdetail.html" style="text-decoration: none; color: black;">
+        <div class="product">
+          <img src="../img/featured1.jpeg" alt="Canon Pixma MG3620" style="height: 260px;" />
+          <h3>Canon Pixma MG3620</h3>
+          <p>Wireless All-In-One Color Printer</p>
+          <div>
+            <span class="price">$150.00</span>
+            <span class="sale-price">$120.00</span>
+          </div>
+        </div>
+      </a>
+      <a href="../HTML/businessproductdetail.html" style="text-decoration: none; color: black;">
+        <div class="product">
+          <img src="../img/businessprinter.jpg" alt="Brother MFC-L8900CDW" style="height: 240px;">
+          <h3>Brother MFC-L8900CDW</h3>
+          <p>Wireless Business Color Laser All-in-One Printer</p>
+          <div>
+            <span class="price">$850.00</span>
+            <span class="sale-price">$800.00</span>
+          </div>
+        </div>
+      </a>
+      <a href="productdetail1.html" style="text-decoration: none; color: black">
+        <div class="product">
+          <img src="../img/3D1.jpg" alt="Creativity 3d Printer" style="height: 260px;">
+          <h3>Creativity K1</h3>
+          <p>Creativity K1, FMD 3D Printer</p>
+          <div>
+            <span class="price">$600.00</span>
+            <span class="sale-price">$520.00</span>
+          </div>
+        </div>
+      </a>
+      <a href="../HTML/enterpriseproductdetail.html" style="text-decoration: none; color: black;">
+        <div class="product">
+          <img src="../img/enterpriseprinter.jpg" alt="Canon Pixma MG3620" style="height: 260px;">
+          <h3>HP LaserJet Enterprise</h3>
+          <p>Monochrome All-in-One Printer</p>
+          <div>
+            <span class="price">$1300.00</span>
+            <span class="sale-price">$1199.00</span>
+          </div>
+        </div>
+      </a>
+      </a>
+      <a href="../HTML/consumeproductdetail.html" style="text-decoration: none; color: black;">
+        <div class="product">
+          <img src="../img/consumeables.jpg" alt="EPSON 60 DURABrite Ultra Ink">
+          <h3>EPSON 60 DURABrite Ultra Ink</h3>
+          <p>Ultra Ink Standard Capacity Black & Color Cartridge Combo Pack </p>
+          <div>
+            <span class="price">$50.00</span>
+            <span class="sale-price">$35.00</span>
+          </div>
+        </div>
+      </a>
+      <a href="../HTML/mediaproductdetail.html" style="text-decoration: none; color: black;">
+        <div class="product">
+          <img src="../img/media.jpg" alt="Lexmark Fuser Maintenance Kit" style="height: 42vh;">
+          <h3>Lexmark Maintenance Kit</h3>
+          <p>Maintenance Kit for Special Media, 220V </p>
+          <div>
+            <span class="price">$500.00</span>
+            <span class="sale-price">$449.00</span>
+          </div>
+        </div>
+      </a>
+      <div class="product">
+        <img src="../img/featured2.jpeg" alt="Epson EcoTank ET-3760" style="height: 42vh;">
+        <h3>Epson EcoTank ET-3760</h3>
+        <p>Wireless Color All-in-One Printer</p>
+        <div>
+          <p class="price">$490.00</p>
+          <p class="sale-price">$350.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="../img/featured3.jpeg" alt="Fujifilm INSTAX Mini Link 2">
+        <h3>Fujifilm INSTAX Mini Link 2</h3>
+        <p>Smartphone Printer Bundle with Film </p>
+        <div>
+          <span class="price">$150.00</span>
+          <span class="sale-price">$99.99</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div id="wide0">
+      <div class="wide">
+        <img src="../img/globe-free-img.png" />
+        <h4>Worldwide Shipping</h4>
+        <p>
+          Enjoy top quality shipping Worldwide. shipping shipping shipping
+        </p>
+      </div>
+      <div class="wide">
+        <img src="../img/quality-free-img.png" />
+        <h4>Best Quality</h4>
+        <p>
+          Best quality products. product product product product prodcut
+          produ.
+        </p>
+      </div>
+      <div class="wide">
+        <img src="../img/tag-free-img.png" />
+        <h4>Best Offers</h4>
+        <p>
+          Best offers.Best offers.Best offers.Best offers.Best offers.Best
+          offers.
+        </p>
+      </div>
+      <div class="wide">
+        <img src="../img/lock-free-img.png" />
+        <h4>Secure Payments</h4>
+        <p>
+          secure payments. secure payments. secure payments. vsecure payments.
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="row">
+      <div class="col">
+        <img src="../img/LOGO.png" alt="logo" class="logo" />
+        <p>write something</p>
+      </div>
+      <div class="col">
+        <h3>Office</h3>
+        <p>this road</p>
+        <p>city, pin 000, nepal</p>
+        <p class="email-id">princeshrestha2111018@gmail.com</p>
+        <h4>+00-0807198095</h4>
+      </div>
+      <div class="col">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="../HTML/homepage.html">Home</a></li>
+          <li><a href="../HTML/productpage.html">Printers</a></li>
+          <li><a href="../HTML/blog.html">Blog</a></li>
+          <li><a href="../HTML/aboutus.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Newsletter</h3>
+        <form>
+          <span style="font-size: 20px; margin-right: 10px">&#9993; </span>
+          <input type="email" placeholder="Enter your email id" required />
+          <button type="submit">
+            <span style="font-size: 10px; cursor: pointer">&#129030;</span>
+          </button>
+        </form>
+        <div>
+          <img src="../img/facebook.png" style="margin-right: 20px" />
+          <img src="../img/twitter.png" style="margin-right: 20px" />
+          <img src="../img/whatsapp.png" style="margin-right: 20px" />
+          <img src="../img/discord.png" />
+        </div>
+      </div>
+    </div>
+    <hr />
+    <p class="copyright">
+      For God's Sake Tired ©️ 2024 - All Rights Reserved
+    </p>
+  </footer>
+  <script src="../JS/home.js"></script>
+  <script>
+    var copy = document.querySelector(".logos-slide").cloneNode(true);
+    document.querySelector(".logos").appendChild(copy);
+  </script>
+</body>
+
+</html>

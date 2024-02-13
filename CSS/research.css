@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  overflow-x: hidden;
+}
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 70px;
+  font-family: "Oswald", sans-serif;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.horizontal-line {
+  width: 100px;
+  height: 5px;
+  background-color: blue;
+}
+.main {
+  background-color: whitesmoke;
+}
+.first {
+  display: flex;
+  margin: 50px;
+  background-color: white;
+  margin-bottom: 0;
+}
+.head2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: black;
+}
+.text {
+  margin: 50px 50px;
+}
+.img {
+  float: right;
+}
+.second {
+  margin: 50px;
+  background-color: white;
+}
+.image {
+  display: flex;
+  justify-content: space-between;
+}
+.imagesecond {
+  width: 90vh;
+  height: 70vh;
+}

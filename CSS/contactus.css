@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  overflow-x: hidden;
+}
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 70px;
+  font-family: "Oswald", sans-serif;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+h3 {
+  text-align: center;
+  color: black;
+  font-size: 40px;
+}
+#back {
+  background-color: whitesmoke;
+}
+hr.line {
+  /* margin-left: 45%; */
+  align-items: center;
+  padding-bottom: 50px;
+  width: 7%;
+  border: none;
+  border-top: 2px solid blue;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+}
+.card h2 {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card p {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+  padding: 10px;
+}
+.card .phone {
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.card .email {
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 20px;
+}
+.form-section {
+  background-color: white;
+}
+.text-section,
+.form-section {
+  padding: 30px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.text-section {
+  margin: 0 50px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input,
+.form-textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  color: black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.form-textarea {
+  height: 200px;
+  resize: vertical;
+  width: 600px;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border: 1px solid #007bff;
+  outline: none;
+}
+
+.form-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 600px;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+.form-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}

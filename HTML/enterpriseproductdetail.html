@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../CSS/productdetail1.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      color: #42424a;
+    }
+
+    header ul li {
+      display: inline-block;
+      list-style: none;
+      margin: 0 30px;
+    }
+
+    header ul li:last-child {
+      margin-right: 0;
+    }
+
+    header ul li a {
+      text-decoration: none;
+      color: #42424a;
+      padding: 22px 0;
+      display: inline-block;
+      transition: all ease 0.3s;
+      font-size: 16px;
+      padding-top: 50px;
+      padding-left: 10px;
+    }
+
+    header ul li a:hover {
+      color: #ff8a00;
+    }
+
+    header ul .submenu {
+      position: absolute;
+      width: 200px;
+      background-color: #ffffff;
+      box-shadow: 0 20px 45px #00000020;
+      margin-top: -50px;
+      opacity: 0;
+      z-index: -999;
+      transition: all ease 0.05s;
+    }
+
+    header ul li:hover .submenu {
+      z-index: 99;
+      opacity: 1;
+      margin-top: 0;
+    }
+
+    header ul .submenu li {
+      margin: 0;
+      width: 100%;
+    }
+
+    header ul .submenu li a {
+      padding: 15px 20px;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .headiv {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      background-color: white;
+    }
+
+    button {
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0d47a1;
+    }
+
+    #sign {
+      text-decoration: none !important;
+      color: #42424a;
+      padding: 22px 0;
+      display: inline-block;
+      transition: all ease 0.3s;
+      font-size: 18px;
+      padding-right: 50px;
+      padding-top: 40px;
+      padding-left: 100px;
+    }
+
+    footer {
+      width: 100%;
+      /* position: absolute; */
+      bottom: 0;
+      background: linear-gradient(to right, #00093c, #2d0b00);
+      color: #fff;
+      padding: 100px 0 30px;
+      border-top-left-radius: 125px;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .row {
+      width: 85%;
+      margin: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .col {
+      width: 25%;
+      margin-bottom: 30px;
+    }
+
+    .col:nth-child(2),
+    .col:nth-child(3) {
+      flex-basis: 15%;
+    }
+
+    .logo {
+      width: 250px;
+      margin-bottom: 30px;
+    }
+
+    .col h3 {
+      width: fit-content;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .email-id {
+      width: fit-content;
+      border-bottom: 1px solid #ccc;
+      margin: 20px 0;
+    }
+
+    footer ul li {
+      list-style: none;
+      margin-bottom: 12px;
+    }
+
+    footer ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    form {
+      padding-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 50px;
+    }
+
+    form input {
+      width: 100%;
+      background: transparent;
+      color: #fff;
+      border: 0;
+      outline: none;
+    }
+
+    hr {
+      width: 90%;
+      border: 0;
+      border-bottom: 1px solid #fff;
+      margin: 20px auto;
+    }
+
+    .copyright {
+      text-align: center;
+    }
+  </style>
+  <title>Home Product Detail</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="headiv">
+        <div>
+          <a href="../HTML/homepage.html"><img src="../img/LOGO.png" alt="logo"
+              style="width: 200px; height: 99px" /></a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="../HTML/productpage.html">Printer &#11167; </a>
+              <ul class="submenu">
+                <li><a href="../HTML/3DPrinters.html">3D Printers</a></li>
+                <li><a href="../HTML/HomePrinter.html">Home Printers</a></li>
+                <li><a href="../HTML/business.html">Business Printers</a></li>
+                <li>
+                  <a href="../HTML/Enterprise.html">Enterprise Printers</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="../HTML/accessories.html">Accessories &#11167;</a>
+              <ul class="submenu">
+                <li><a href="../HTML/consumeables.html">Consumables</a></li>
+                <li>
+                  <a href="../HTML/media.html">Media and Maintenance</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../HTML/research.html">Research</a></li>
+            <li><a href="../HTML/aboutus.html">About US</a></li>
+            <li><a href="../HTML/blog.html">Blog</a></li>
+            <li><a href="../HTML/contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div style="display: flex; width: 15%">
+          <a href="../HTML/login.html" id="sign"><img src="../img/grocery-store.png" style="margin-left: -40px" /></a>
+          <a href="../HTML/login.html" id="sign"><img src="../img/account.png" style="margin-left: -130px" /></a>
+        </div>
+      </div>
+    </header>
+  </main>
+  <section class="main">
+    <div class="first">
+      <div class="img">
+        <img src="../img/enterpriseprinter.jpg" class="img" style="object-fit: fill" />
+      </div>
+      <div class="detail">
+        <p style="font-size: 13px; color: grey">
+          home / printer / enterprise printer
+        </p>
+        <h1 class="title">HP LaserJet Enterprise MFP M528dn</h1>
+        <div style="padding: 15px 0">
+          <span class="price">$1300.00</span>
+          <span class="sale-price">$1199.00 </span>
+          <p style="display: inline-block">+ Free Shipping</p>
+        </div>
+        <p>
+          Monochrome All-in-One Printer with built-in Ethernet & 2-sided printing (1PV64A), White<br>
+          Choose an HP LaserJet Enterprise MFP designed to handle business solutions
+          securely and efficiently, and helps conserve energy with HP Eco Smart toner black.
+          Keep up with the demands of growing business with a printer you can rely on.
+        </p>
+        <div style="display: flex">
+          <a href="#"><button style="margin-top: 50px; margin-right: 15px">
+              Buy
+            </button></a>
+          <a href="#"><button style="margin-top: 50px">Add To Cart</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="horizontal-line"></div>
+    <h1 class="title" style="margin-top: 20px; font-size: 30px">
+      Product Description
+    </h1>
+    <div class="second">
+      <h2 class="second-heading" style="margin-top: 20px">About this item</h2>
+      <ul>
+        <li>REDEFINE LONG-TERM BUSINESS EXPECTATIONS – Print consistently high-quality documents
+          with the HP LaserJet Enterprise M608n, A monochrome laser printer designed to combine
+          performance, energy efficiency, and security
+        </li>
+        <li>THE WORLD'S MOST SECURE PRINTING – Your laser printer has the industry's strongest security,
+          with over 200 embedded security features that automatically monitor threats, detect intrusions,
+          and validate operating software
+        </li>
+        <li>CENTRALIZE PRINTING CONTROL – Help build business efficiency with HP Web JetAdmin by easily
+          adding new devices and solutions, updating features, and applying corporate policies, and set
+          security configuration policies with HP JetAdvantage Security Manager</li>
+        <li>ENHANCED PRODUCTIVITY – Accelerate workflow and improve accuracy throughout your organization
+          with a laser printer that offers features like a convenience stapler and Ethernet capabilities</li>
+        <li>TOP QUALITY AND SPEED – Keep your business moving and productive with an 8" Color touchscreen
+          control panel, 2-sided Print and scan, and Print speeds of up to 45 pages per minute with this
+          black and White duplex laser printer</li>
+        <li>LOW COST, LOW ENERGY USE - save up to 29% energy over prior products, with intelligent power
+          Features that ready your Multifunction Laser printer right when you need it, and turn it off when
+          you don't</li>
+        <li>
+          TONER CARTRIDGE YOU CAN TRUST – avoid reprints, wasted Supplies, and service calls by using
+          original HP 89a/89x toner cartridges designed for your monochrome laser printer, or choose
+          optional extra high-yield 89Y cartridges for even greater value
+        </li>
+        <li>
+          ONE-YEAR, NEXT-BUSINESS DAY, ONSITE – Get help with 24-hour, 7 days a week FREE HP Websupport.
+          See specification sheet for terms and condition
+        </li>
+        <li>
+          Connectivity Technology: Usb
+        </li>
+      </ul>
+    </div>
+    <div class="horizontal-line"></div>
+    <div class="third">
+      <h1 class="title" style="margin-top: 20px; font-size: 30px">
+        Product Information
+      </h1>
+      <table>
+        <tr>
+          <td>Product Dimension</td>
+          <td>12 x 17.7 x 6 inches</td>
+        </tr>
+        <tr>
+          <td>Item Weight</td>
+          <td>47.6 pounds</td>
+        </tr>
+        <tr>
+          <td>ASIN</td>
+          <td>B07QS5RVF5</td>
+        </tr>
+        <tr>
+          <td>Customer Reviews</td>
+          <td>⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>Manufacturer</td>
+          <td>HP</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <footer>
+    <div class="row">
+      <div class="col">
+        <img src="../img/LOGO.png" alt="logo" class="logo" />
+        <p>write something</p>
+      </div>
+      <div class="col">
+        <h3>Office</h3>
+        <p>this road</p>
+        <p>city, pin 000, nepal</p>
+        <p class="email-id">princeshrestha2111018@gmail.com</p>
+        <h4>+00-0807198095</h4>
+      </div>
+      <div class="col">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="../HTML/homepage.html">Home</a></li>
+          <li><a href="../HTML/productpage.html">Printers</a></li>
+          <li><a href="../HTML/blog.html">Blog</a></li>
+          <li><a href="../HTML/aboutus.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Newsletter</h3>
+        <form>
+          <span style="font-size: 20px; margin-right: 10px">&#9993; </span>
+          <input type="email" placeholder="Enter your email id" required />
+          <button type="submit">
+            <span style="font-size: 10px; cursor: pointer">&#129030;</span>
+          </button>
+        </form>
+        <div>
+          <img src="../img/facebook.png" style="margin-right: 20px" />
+          <img src="../img/twitter.png" style="margin-right: 20px" />
+          <img src="../img/whatsapp.png" style="margin-right: 20px" />
+          <img src="../img/discord.png" />
+        </div>
+      </div>
+    </div>
+    <hr />
+    <p class="copyright">
+      For God's Sake Tired ©️ 2024 - All Rights Reserved
+    </p>
+  </footer>
+</body>
+
+</html>

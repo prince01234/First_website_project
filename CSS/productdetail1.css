@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  overflow-x: hidden;
+  font-family: "poppins", sans-serif;
+}
+.main {
+  background-color: whitesmoke;
+  height: auto;
+  padding: 50px 50px;
+}
+.first {
+  height: auto;
+  display: flex;
+}
+.img {
+  object-fit: cover;
+  height: 450px;
+  width: 500px;
+}
+.detail {
+  margin: 0 20px;
+  padding-top: 20px;
+}
+.title {
+  font-weight: 500;
+  color: black;
+  font-family: sans-serif;
+  font-size: 40px;
+  padding: 10px 0;
+}
+.price,
+.sale-price {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: inline;
+}
+.price {
+  color: #333;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+.sale-price {
+  color: red;
+}
+.horizontal-line {
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+  margin: 50px 500px 0 0;
+}
+.second {
+  margin: 0 100px;
+}
+.second-heading,
+.second-text {
+  color: black;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 1100px;
+}
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../CSS/blog.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #42424a;
+    }
+
+    header ul li {
+      display: inline-block;
+      list-style: none;
+      margin: 0 30px;
+    }
+
+    header ul li:last-child {
+      margin-right: 0;
+    }
+
+    header ul li a {
+      text-decoration: none;
+      color: #42424a;
+      padding: 22px 0;
+      display: inline-block;
+      transition: all ease 0.3s;
+      font-size: 16px;
+      padding-top: 50px;
+      padding-left: 10px;
+    }
+
+    header ul li a:hover {
+      color: #ff8a00;
+    }
+
+    header ul .submenu {
+      position: absolute;
+      width: 200px;
+      background-color: #ffffff;
+      box-shadow: 0 20px 45px #00000020;
+      margin-top: -50px;
+      opacity: 0;
+      z-index: -999;
+      transition: all ease 0.05s;
+    }
+
+    header ul li:hover .submenu {
+      z-index: 99;
+      opacity: 1;
+      margin-top: 0;
+    }
+
+    header ul .submenu li {
+      margin: 0;
+      width: 100%;
+    }
+
+    header ul .submenu li a {
+      padding: 15px 20px;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .headiv {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    button {
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0d47a1;
+    }
+
+    #sign {
+      text-decoration: none !important;
+      color: #42424a;
+      padding: 22px 0;
+      display: inline-block;
+      transition: all ease 0.3s;
+      font-size: 18px;
+      padding-right: 50px;
+      padding-top: 40px;
+      padding-left: 100px;
+    }
+
+    footer {
+      width: 100%;
+      /* position: absolute; */
+      bottom: 0;
+      background: linear-gradient(to right, #00093c, #2d0b00);
+      color: #fff;
+      padding: 100px 0 30px;
+      border-top-left-radius: 125px;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .row {
+      width: 85%;
+      margin: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .col {
+      width: 25%;
+      margin-bottom: 30px;
+    }
+
+    .col:nth-child(2),
+    .col:nth-child(3) {
+      flex-basis: 15%;
+    }
+
+    .logo {
+      width: 250px;
+      margin-bottom: 30px;
+    }
+
+    .col h3 {
+      width: fit-content;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .email-id {
+      width: fit-content;
+      border-bottom: 1px solid #ccc;
+      margin: 20px 0;
+    }
+
+    footer ul li {
+      list-style: none;
+      margin-bottom: 12px;
+    }
+
+    footer ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    form {
+      padding-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 50px;
+    }
+
+    form input {
+      width: 100%;
+      background: transparent;
+      color: #fff;
+      border: 0;
+      outline: none;
+    }
+
+    hr {
+      width: 90%;
+      border: 0;
+      border-bottom: 1px solid #fff;
+      margin: 20px auto;
+    }
+
+    .copyright {
+      text-align: center;
+    }
+  </style>
+  <title>Blog</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="headiv">
+        <div>
+          <a href="../HTML/homepage.html"><img src="../img/LOGO.png" alt="logo"
+              style="width: 200px; height: 99px" /></a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="../HTML/productpage.html">Printer &#11167; </a>
+              <ul class="submenu">
+                <li><a href="../HTML/3DPrinters.html">3D Printers</a></li>
+                <li><a href="../HTML/HomePrinter.html">Home Printers</a></li>
+                <li><a href="../HTML/business.html">Business Printers</a></li>
+                <li><a href="../HTML/Enterprise.html">Enterprise Printers</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../HTML/accessories.html">Accessories &#11167;</a>
+              <ul class="submenu">
+                <li><a href="../HTML/consumeables.html">Consumables</a></li>
+                <li><a href="../HTML/media.html">Media and Maintenance</a></li>
+              </ul>
+            </li>
+            <li><a href="../HTML/research.html">Research</a></li>
+            <li><a href="../HTML/aboutus.html">About US</a></li>
+            <li><a href="../HTML/blog.html">Blog</a></li>
+            <li><a href="../HTML/contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div style="display: flex; width: 15%;">
+          <a href="../HTML/login.html" id="sign"><img src="../img/grocery-store.png" style="margin-left: -40px;"></a>
+          <a href="../HTML/login.html" id="sign"><img src="../img/account.png" style="margin-left: -130px;"></a>
+        </div>
+      </div>
+    </header>
+  </main>
+  <section id="main">
+    <div style="display: flex;">
+      <div><img src="../img/user.png"></div>
+      <p style="padding-left: 10px; color: black;"> Admin • January 25, 2024 • 3 mins read</p>
+      <div style="padding-left: 470px;">
+        <img src="../img/share.png">
+      </div>
+    </div>
+    <h1 class="heading"> The Digital Tapestry: Navigating Tech's Impact on Daily Life and Printing</h1>
+    <div>
+      <img src="../img/blog-img1.jpg" class="blog-main-img">
+    </div>
+    <div style="display: flex;">
+      <div class="vertical-line"></div>
+      <div>
+        <p class="quote">
+          "Technology, in the hands of visionaries, becomes the artistry of progress,
+          <br> where each innovation is a stroke painting a brighter future." - Elon Musk
+        </p>
+      </div>
+    </div>
+    <div>
+      <p style="margin-top: 50px; color: black;">
+        Technology, a weaver in the tapestry of human progress, intertwines efficiency, innovation, and societal change.
+        This exploration delves into its broad facets, offering insight into its complex influence. Fundamentally,
+        technology propels change and adaptation, from the wheel to artificial intelligence, transforming human
+        existence.
+        Efficiency drives progress in communication, transportation, healthcare, and more. Communication's evolution,
+        from the telegraph to the internet and social media, exemplifies globalized society, fostering cross-cultural
+        communication and
+        global teamwork.
+      </p>
+      <p style="margin-top: 50px; color: black;">
+        Navigating this evolution requires a balance between tech progress and societal welfare. In essence, technology
+        tells
+        a dynamic tale of progress, connectivity, and creativity. Mindful consideration of ethics, society, and the
+        environment
+        is key as we embrace change. Tech wields the power to reshape our world, urging us toward ethical innovation and
+        holistic advancement.
+      </p>
+    </div>
+    <div>
+      <h2 class="topic">Tech Brilliance: Positive Impacts on Life</h2>
+      <p style="margin-top: 25px; color: black;">
+        Positively, technology intricately weaves transformative influences across human existence.
+        Online learning platforms democratize education, breaking geographical barriers.
+        In healthcare, digital records and telemedicine reshape patient care, extending accessibility.
+        Technology fosters global connectivity and cross-border partnerships in communication. Industries thrive on
+        enhanced efficiency, propelling economic growth. Smart cities, driven by technology, optimize resource
+        management
+        and elevate overall quality of life, championing sustainable urban living.
+      </p>
+      <div style="display: flex; margin-top: 20px;">
+        <div class="vertical-line" style="height: 60px;"></div>
+        <div>
+          <p class="quote">
+            "With technology, we can achieve the unimagineable." - Anonymous
+          </p>
+        </div>
+      </div>
+      <p style="margin-top: 25px; color: black;">
+        Within the realms of creativity, technology emerges as a catalyst for self-expression and artistic exploration.
+        These positive influences create ripples, fostering a dynamic tapestry of progress, connectivity, and a more
+        inclusive,
+        interconnected world.
+      </p>
+    </div>
+    <div>
+      <h2 class="topic">Tech Shadows: Unveiling the Dark Side of Technological Advancements</h2>
+      <p style="margin-top: 25px; color: black;">
+        Technology's rapid advancement casts a shadow, giving rise to various negative effects.
+        The widening digital gap creates disparities in opportunities and information access, raising concerns about
+        equitable progress. The widespread use of technology takes a toll on physical and mental health, fostering
+        issues like screen addiction and sedentary lifestyles.
+      </p>
+      <div style="display: flex; margin-top: 20px;">
+        <div class="vertical-line" style="height: 95px;"></div>
+        <div>
+          <p class="quote">
+            "I fear that day that technology will surpass our human interaction. The world will
+            have a generation of idiots" - Albert Einstein
+          </p>
+        </div>
+      </div>
+      <p style="margin-top: 25px; color: black;">
+        Additionally, the interconnected society raises security concerns with privacy violations
+        and cybersecurity risks. The swift pace of innovation can lead to job displacement, fueling unemployment
+        and the need for reskilling. Environmental repercussions, including electronic waste and resource depletion,
+        underscore the ecological toll of constant technological consumption. Achieving a balance between
+        progress and its unintended consequences demands vigilance, ethical considerations, and proactive measures to
+        address the negative impacts on society, individuals, and the environment.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="topic">Tech's Print: Daily Life and the Evolution of Printing Business</h2>
+      <p style="margin-top: 25px; color: black;">
+        Technology has fundamentally reshaped our lives, touching every facet of existence.
+        Social media and cellphones have revolutionized communication, connecting people and sharing
+        information. In the printing industry, technological advancements have replaced outdated
+        procedures, bringing about a digital transformation.
+      </p>
+      <div style="display: flex; margin-top: 20px;">
+        <div class="vertical-line" style="height: 230px;"></div>
+        <div>
+          <p class="quote">
+            "You can't have an industrial revolution,
+            <br>you can't have democracies,
+            <br>you can't have populations who can govern
+            <br>themselves until you have literacy.
+            <br>The printing press simply unlocked literacy." - Howard Rheingold
+          </p>
+        </div>
+      </div>
+      <p style="margin-top: 25px; color: black;">
+        Digital printing technology has streamlined production, offering cost-effective solutions and
+        faster turnaround times. Online platforms have disrupted traditional printing models, providing users
+        with easy customization and ordering options. Innovations like quick prototyping and
+        personalized products open new avenues for creativity. However, this technological revolution poses
+        challenges for established printing companies, requiring adaptability in a rapidly changing market.
+        The symbiotic relationship between technology and printing exemplifies the profound impact of innovation on
+        both consumer daily life and business operations.
+      </p>
+    </div>
+    <div>
+      <h2 class="topic">Tech Harmony: Progress and Challenges</h2>
+      <img src="../img/blog-img2.webp" class="blog-main-img" style="width: 900px; height: 500px;">
+      <p style="margin-top: 25px; color: black;">
+        Technology, a transformative force, profoundly impacts human existence. Positive aspects include democratized
+        education, reshaped healthcare, and enhanced connectivity. Yet, shadows emerge: a digital gap, health concerns,
+        privacy issues, job displacement, and environmental impact. In daily life and the printing business,
+        technology brings efficiency but challenges traditional models.
+      </p>
+      <p style="margin-top: 25px; color: black;">
+        In conclusion, navigating this dynamic landscape requires a delicate balance. Embracing the positives demands
+        ethical considerations to mitigate the negatives. Technology, while a powerful force for progress,
+        necessitates careful stewardship for a harmonious coexistence between innovation and human well-being.
+      </p>
+    </div>
+    <div>
+      <p style="margin-top: 35px; color: brown;">
+        #technology #PositiveNegative #printers
+      </p>
+      <div class="horizontal-line"></div>
+      <div style="display: flex; margin: 35px 0;">
+        <img src="../img/facebook1.png" style="margin-right: 20px; height: 22px;">
+        <img src="../img/twitter1.png" style="margin-right: 20px; height: 22px;">
+        <img src="../img/linkedin.png" style="margin-right: 20px; height: 22px;">
+        <img src="../img/link.png" style="margin-right: 20px; height: 22px;">
+      </div>
+    </div>
+    <div class="horizontal-line"></div>
+    <div style="margin-top: 20px;">
+      <p>9.5k views <span style="margin-left: 700px;">1.5k&#9825;</span></p>
+    </div>
+    <div style="margin-top: 100px;">
+      <h4 style="color: black;">Comments</h4>
+      <div class="horizontal-line" style="margin-top: 30px; margin-bottom: 50px;"></div>
+      <textarea id="comment" name="comment" placeholder="Type your comment here..."></textarea>
+    </div>
+  </section>
+
+  <footer>
+    <div class="row">
+      <div class="col">
+        <img src="../img/LOGO.png" alt="logo" class="logo" />
+        <p>write something</p>
+      </div>
+      <div class="col">
+        <h3>Office</h3>
+        <p>this road</p>
+        <p>city, pin 000, nepal</p>
+        <p class="email-id">princeshrestha2111018@gmail.com </p>
+        <h4>+00-0807198095</h4>
+      </div>
+      <div class="col">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="../HTML/homepage.html">Home</a></li>
+          <li><a href="../HTML/productpage.html">Printers</a></li>
+          <li><a href="../HTML/blog.html">Blog</a></li>
+          <li><a href="../HTML/aboutus.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Newsletter</h3>
+        <form>
+          <span style="font-size: 20px; margin-right: 10px;">&#9993; </span> <input type="email"
+            placeholder="Enter your email id" required>
+          <button type="submit"><span style="font-size: 10px; cursor: pointer;">&#129030;</span></button>
+        </form>
+        <div>
+          <img src="../img/facebook.png" style="margin-right  : 20px;">
+          <img src="../img/twitter.png" style="margin-right  : 20px;">
+          <img src="../img/whatsapp.png" style="margin-right  : 20px;">
+          <img src="../img/discord.png">
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">For God's Sake Tired ©️ 2024 - All Rights Reserved</p>
+  </footer>
+</body>
+
+</html>
